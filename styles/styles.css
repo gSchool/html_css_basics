@@ -1,14 +1,29 @@
+/*
+    This is here so we can see the boxes
+    You typically wouldn't have this rule in
+    your CSS
+*/
 * {
     border: 1px solid red !important;
 }
 
-.border-box {
+/*
+    This should always be here according to:
+    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+*, *:before, *:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.box-model-demo {
+.old-school {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+div {
     width: 50%;
     padding: 1em;
     margin: 2em;
@@ -32,7 +47,10 @@
 
 .flex-item {
     padding: 1em;
-    margin: auto; /* Makes centering work. */
+    margin-left: auto; /* Makes centering work. */
+    margin-right: auto; /* Makes centering work. */
+    /* can also use 1 line setting */
+    /*margin: 0 auto;*/
 }
 
 .font-one {
@@ -52,13 +70,13 @@
     font-weight: bold;
 }
 
-.red-text {
+.colored-text {
     color: #ff0099;
     /* can also use shorthand if you have repeating */
     /*color: #f09;*/
 }
 
-.red-background {
+.colored-background {
     background-color: #ff0099
     /* can also use shorthand if you have repeating digits */
     /*background-color: #f09;*/
@@ -95,4 +113,28 @@
 .strikethrough {
     padding: 1em;
     text-decoration: line-through;
+}
+
+/*
+    Example of URL shortener CSS rules
+*/
+.shorten-url-inputs {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.url-to-shorten {
+    width: 50%;
+    font-size: 1.25em;
+    margin: .5em auto;
+    padding: .25em;
+}
+
+.action {
+    display: inline;
+    padding: .5em;
+    background-color: #0077ff;
+    color: #fff;
+    margin: auto;
 }
