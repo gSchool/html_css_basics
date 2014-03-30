@@ -2,12 +2,6 @@
     border: 1px solid red !important;
 }
 
-body {
-    /* Set this here for the whole document */
-    /* Use em or % from here on out */
-    font-size: 30px;
-}
-
 .border-box {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -15,30 +9,29 @@ body {
 }
 
 .box-model-demo {
-    height: 300px;
-    width: 300px;
-    padding: 10px;
-    margin: 30px;
+    width: 50%;
+    padding: 1em;
+    margin: 2em;
 }
 
 .flex-container {
     display: flex;
-    height: 300px;
-    width: 300px;
-    margin: 100px;
+    width: 50%;
+    margin: 4em;
 }
 
 .flex-container-row {
     flex-direction: row; /* Default */
+    padding: 1em;
 }
 
 .flex-container-column {
     flex-direction: column;
+    padding: 1em;
 }
 
 .flex-item {
-    width: 100px;
-    height: 100px;
+    padding: 1em;
     margin: auto; /* Makes centering work. */
 }
 
@@ -69,4 +62,37 @@ body {
     background-color: #ff0099
     /* can also use shorthand if you have repeating digits */
     /*background-color: #f09;*/
+}
+
+.outer-box {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+}
+
+.inner-box {
+    width: 50%;
+    padding: 1em;
+    height: 50%;
+}
+
+.underline {
+    padding: 1em;
+    text-decoration: underline;
+}
+
+.no-underline {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.overline {
+    padding: 1em;
+    text-decoration: overline;
+}
+
+.strikethrough {
+    padding: 1em;
+    text-decoration: line-through;
 }
