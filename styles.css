@@ -14,3 +14,22 @@
     padding: 10px;
     margin: 30px;
 }
+
+.flex-container {
+    display: flex;
+    height: 300px;
+    width: 300px;
+    margin: 100px;
+}
+
+.flex-container-row {
+    flex-direction: row; /* Default */
+}
+
+.flex-container-column {
+    flex-direction: column;
+}
+
+.flex-item {
+
+}
