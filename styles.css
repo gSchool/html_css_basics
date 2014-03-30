@@ -15,8 +15,8 @@ body {
 }
 
 .box-model-demo {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
     padding: 10px;
     margin: 30px;
 }
