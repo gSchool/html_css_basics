@@ -2,6 +2,12 @@
     border: 1px solid red !important;
 }
 
+body {
+    /* Set this here for the whole document */
+    /* Use em or % from here on out */
+    font-size: 30px;
+}
+
 .border-box {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -33,5 +39,22 @@
 .flex-item {
     width: 100px;
     height: 100px;
-    margin: auto;  /* Makes centering work. */
+    margin: auto; /* Makes centering work. */
+}
+
+.font-one {
+    font-family: 'Revalia', cursive;
+}
+
+.font-two {
+    font-family: 'Ubuntu Mono';
+    font-size: 1.5em;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
 }
