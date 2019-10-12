@@ -4,7 +4,7 @@
     your CSS
 */
 * {
-    border: 1px solid red !important;
+    border: 2px solid red !important;
 }
 
 /*
@@ -21,12 +21,13 @@
     -moz-box-sizing: content-box;
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
+
 }
 
 div {
-    width: 50%;
-    padding: 1em;
-    margin: 2em;
+    width: 70%;
+    padding: 2.5em;
+    margin: 2.5em;
 }
 
 .flex-container {
@@ -37,16 +38,16 @@ div {
 
 .flex-container-row {
     flex-direction: row; /* Default */
-    padding: 1em;
+    padding: 2em;
 }
 
 .flex-container-column {
     flex-direction: column;
-    padding: 1em;
+    padding: 2em;
 }
 
 .flex-item {
-    padding: 1em;
+    padding: 1.5em;
     margin-left: auto; /* Makes centering work. */
     margin-right: auto; /* Makes centering work. */
     /* can also use 1 line setting */
@@ -55,6 +56,7 @@ div {
 
 .font-one {
     font-family: 'Revalia', cursive;
+    margin-left: 2.2rem;
 }
 
 .font-two {
@@ -100,7 +102,9 @@ div {
 }
 
 .no-underline {
-    display: block;
+    display:block;
+    width:50%;
+    margin-left:1.5rem;
     padding: 1em;
     text-decoration: none;
 }
@@ -137,4 +141,8 @@ div {
     background-color: #0077ff;
     color: #fff;
     margin: auto;
+}
+span {
+    padding:1.5rem;
+    margin-left:2.5rem;
 }
